@@ -1,0 +1,548 @@
+@extends('layouts.main')
+@section('main-container')
+    <!-- SLIDER -->
+    <div class="owl-carousel owl-theme hero-slider">
+        <div class="slide slide1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-10 text-white">
+
+                        <h1 class="display-3 my-4">Unlock your <br>imagination.</h1>
+                        <a href="#" class="btn btn-brand">LEARN MORE <i class='fa fa-arrow-right icon-slider'></i> </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide slide2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-10  text-white">
+
+                        <h1 class="display-3 my-4">Unlock your <br>imagination.</h1>
+                        <a href="#" class="btn btn-brand">LEARN MORE <i class='fa fa-arrow-right icon-slider'></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Department -->
+    <section id="department" class="department pt-0">
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <div class="card">
+
+                    <nav>
+                        <div class="nav nav-tabs " id="nav-tab" role="tablist">
+                            <button class="nav-link btn-blue active" id="nav-home-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                                aria-selected="true">Software Development Department</button>
+                            <button class="nav-link btn-perpul" id="nav-profile-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                                aria-selected="false">Entertainment Department</button>
+
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade active show" id="nav-home" role="tabpanel"
+                            aria-labelledby="nav-home-tab">
+                            <div id="projects-slider2" class="owl-theme owl-carousel">
+
+
+                                <a href="services-software-development.html">
+                                    <div class="department-box">
+
+                                        <div class="department-row">
+                                            <div class="department-col-1">
+                                                <svg width="47" height="41" class="icon-fill" viewBox="0 0 47 41"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M0.663574 13.7241C2.05642 13.7361 3.44927 13.7481 4.84212 13.7601C5.05825 13.7601 5.28639 13.7601 5.55055 13.7601C5.55055 14.0123 5.55055 14.2044 5.55055 14.3965C5.55055 20.6163 5.55055 26.8241 5.55055 33.0439C5.55055 33.7523 5.70664 34.4127 6.33102 34.809C6.66723 35.0131 7.09949 35.1692 7.49573 35.1692C18.1942 35.1932 28.8808 35.2052 39.5793 35.2052C39.7714 35.2052 39.9635 35.2052 40.1796 35.2052C40.1796 36.8262 40.1796 38.3991 40.1796 40.0562C27.0196 40.0562 13.8476 40.0562 0.675582 40.0562C0.663574 31.2788 0.663574 22.5015 0.663574 13.7241Z"
+                                                        fill="#F0B800" />
+                                                    <path
+                                                        d="M0.663574 6.44775C2.27255 6.44775 3.88153 6.44775 5.51453 6.44775C5.51453 8.35692 5.51453 10.2421 5.51453 12.1993C3.88153 12.1993 2.27255 12.1993 0.663574 12.1993C0.663574 10.2781 0.663574 8.36892 0.663574 6.44775Z"
+                                                        fill="#F0B800" />
+                                                    <path
+                                                        d="M7.17163 33.5965C7.17163 24.8552 7.17163 16.1259 7.17163 7.37256C20.3316 7.37256 33.4917 7.37256 46.6637 7.37256C46.6637 16.1139 46.6637 24.8312 46.6637 33.5965C33.4917 33.5965 20.3436 33.5965 7.17163 33.5965ZM30.826 11.4791C30.3698 11.4791 30.0095 11.5151 29.6613 11.4671C29.2531 11.419 29.097 11.5871 28.9649 11.9473C27.0437 17.4107 25.1105 22.862 23.1774 28.3133C23.1293 28.4694 23.0693 28.6135 23.0093 28.8056C23.6096 28.8056 24.162 28.8056 24.7263 28.8056C26.7556 23.0541 28.7848 17.3026 30.826 11.4791ZM31.8226 24.1468C32.0268 24.0747 32.1829 24.0147 32.3269 23.9547C34.4522 23.0661 36.5775 22.1776 38.7028 21.289C39.6754 20.8808 39.6634 20.8808 39.6754 19.8241C39.6754 19.536 39.5914 19.4039 39.3272 19.2958C37.9103 18.7195 36.5175 18.1191 35.1006 17.5307C34.032 17.0865 32.9513 16.6302 31.8346 16.1619C31.6785 16.6302 31.5225 17.0625 31.3664 17.5307C33.4917 18.3953 35.5929 19.2598 37.7903 20.1483C35.5809 21.0489 33.4917 21.9014 31.3664 22.7659C31.5225 23.2462 31.6665 23.6785 31.8226 24.1468ZM22.0127 16.1859C21.8326 16.246 21.7005 16.294 21.5564 16.354C19.4071 17.2546 17.2578 18.1551 15.1085 19.0557C14.1599 19.4519 14.1719 19.4519 14.1599 20.4965C14.1599 20.8087 14.28 20.9288 14.5561 21.0489C16.8976 22.0215 19.239 23.0061 21.5924 23.9907C21.7245 24.0507 21.8686 24.0867 22.0247 24.1468C22.1808 23.6785 22.3249 23.2462 22.4809 22.7899C20.3316 21.9134 18.2424 21.0609 16.069 20.1723C18.2544 19.2838 20.3557 18.4313 22.493 17.5548C22.3128 17.0745 22.1688 16.6422 22.0127 16.1859Z"
+                                                        fill="#F0B800" />
+                                                    <path
+                                                        d="M7.17163 5.71548C7.17163 3.79431 7.17163 1.90916 7.17163 0C20.3316 0 33.4796 0 46.6517 0C46.6517 1.89715 46.6517 3.7823 46.6517 5.71548C33.5037 5.71548 20.3557 5.71548 7.17163 5.71548ZM12.3828 3.49413C12.9231 3.48212 13.4635 3.50613 13.9918 3.48212C14.4 3.4581 14.6762 3.13391 14.6882 2.73767C14.7002 2.32942 14.4721 1.94518 14.1239 1.93318C13.0072 1.90916 11.8785 1.90916 10.7618 1.94518C10.3776 1.95719 10.1014 2.35343 10.1254 2.73767C10.1494 3.19394 10.4376 3.48212 10.8939 3.49413C11.3982 3.50613 11.8905 3.49413 12.3828 3.49413ZM19.1069 3.49413C19.6352 3.49413 20.1515 3.50613 20.6799 3.48212C21.1601 3.47011 21.4603 3.13391 21.4483 2.67763C21.4363 2.19734 21.1481 1.93318 20.6558 1.92117C20.4517 1.92117 20.2356 1.92117 20.0315 1.92117C19.239 1.92117 18.4465 1.90916 17.654 1.93318C17.1737 1.94518 16.8855 2.3054 16.9096 2.76168C16.9336 3.21796 17.2097 3.49413 17.678 3.49413C18.1583 3.50613 18.6386 3.49413 19.1069 3.49413Z"
+                                                        fill="#F0B800" />
+                                                </svg>
+                                            </div>
+                                            <div class="department-col-2">
+                                                Software
+                                                Development
+                                            </div>
+                                            <div class="department-col-3">
+                                                <i class='fa fa-arrow-right icon-slider'></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="{{ route('services-department') }}">
+                                    <div class="department-box">
+
+                                        <div class="department-row">
+                                            <div class="department-col-1">
+                                                <svg width="26" height="46" class="icon-fill" viewBox="0 0 26 46"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M0.0144766 22.9783C0.0144766 16.1282 0.0289532 9.27806 0 2.42792C0 0.505836 1.18708 -0.173397 2.96771 0.0289278C3.11247 0.0433795 3.27172 0.260156 3.3441 0.419126C3.86526 1.48856 4.37194 2.55799 4.84967 3.65632C5.18263 4.40782 5.68931 4.75466 6.52895 4.74021C10.843 4.72575 15.157 4.72575 19.4855 4.74021C20.3252 4.74021 20.8318 4.40782 21.1648 3.65632C21.6425 2.57244 22.1782 1.50301 22.6559 0.419126C22.8007 0.101187 22.9744 -0.0288794 23.3074 0.014476C23.539 0.0433795 23.7706 0.014476 24.0167 0.0289278C25.1314 0.0867349 25.9276 0.867131 26 1.99437C26.0145 2.12444 26 2.24005 26 2.37012C26 16.1282 26 29.8863 25.9855 43.6444C25.9855 44.1213 25.8552 44.656 25.6236 45.0751C25.2472 45.7688 24.5523 46 23.7851 46C16.5902 46 9.4098 46.0145 2.21492 46C0.781737 46 0 45.1474 0 43.7022C0 36.7798 0.0144766 29.8718 0.0144766 22.9783ZM9.27951 27.6463C9.26503 28.4122 9.69933 28.9614 10.3218 29.1204C10.9298 29.2793 11.5379 28.9758 11.8708 28.3255C13.4053 25.3051 14.9399 22.2991 16.4599 19.2642C16.5902 18.9897 16.6626 18.6428 16.6336 18.3393C16.5757 17.7324 16.0835 17.2988 15.49 17.2121C14.9109 17.1254 14.3753 17.4289 14.0568 18.0503C12.5223 21.0563 11.0022 24.0478 9.48218 27.0537C9.36637 27.285 9.30846 27.5307 9.27951 27.6463ZM19.5145 24.4813C18.8196 25.1461 18.1971 25.7531 17.5891 26.3601C16.9087 27.0393 16.8797 27.8341 17.4733 28.4122C18.0523 28.9758 18.8341 28.9325 19.4855 28.2821C20.3976 27.3861 21.3096 26.4757 22.2071 25.5652C22.9165 24.8426 22.931 24.12 22.2216 23.3974C21.3241 22.487 20.412 21.5765 19.5 20.6805C18.8341 20.0302 17.9944 20.0013 17.4443 20.5794C16.8942 21.1574 16.9376 21.9378 17.5891 22.5882C18.1826 23.2096 18.8196 23.8165 19.5145 24.4813ZM6.51448 21.1719C7.19488 20.4926 7.83185 19.8857 8.45434 19.2498C9.09131 18.5995 9.12027 17.8046 8.55568 17.241C7.99109 16.6774 7.19488 16.7063 6.54343 17.3566C5.61693 18.2671 4.7049 19.192 3.79287 20.1024C3.11247 20.7817 3.11247 21.5187 3.76392 22.198C4.69042 23.1373 5.61693 24.0622 6.55791 24.9871C7.20935 25.623 8.02005 25.6519 8.57016 25.0739C9.13474 24.4958 9.09131 23.7154 8.43987 23.0506C7.83185 22.4436 7.20935 21.8511 6.51448 21.1719ZM12.9855 41.7078C11.8129 41.7078 10.6403 41.7078 9.46771 41.7078C8.5412 41.7078 7.90423 42.2715 7.91871 43.0663C7.93319 43.8467 8.5412 44.3959 9.43875 44.4103C11.7984 44.4103 14.1726 44.4103 16.5323 44.4103C17.4588 44.4103 18.0958 43.8467 18.0813 43.0374C18.0668 42.2426 17.4588 41.7078 16.5612 41.7078C15.3742 41.7078 14.1726 41.7078 12.9855 41.7078Z"
+                                                        fill="#F0B800" />
+                                                    <path
+                                                        d="M6.16704 0.0576172C10.7561 0.0576172 15.2584 0.0576172 19.8185 0.0576172C19.529 0.679044 19.2828 1.25711 18.9933 1.80628C18.9354 1.9219 18.7183 2.02306 18.5735 2.02306C14.853 2.03751 11.147 2.03751 7.4265 2.02306C7.28174 2.02306 7.06459 1.93635 6.99221 1.82073C6.71715 1.27157 6.47105 0.693495 6.16704 0.0576172Z"
+                                                        fill="#F0B800" />
+                                                </svg>
+                                            </div>
+                                            <div class="department-col-2">
+                                                Mobile
+                                                Application
+                                                Development
+                                            </div>
+                                            <div class="department-col-3">
+                                                <i class='fa fa-arrow-right icon-slider'></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="{{ route('services-department') }}">
+                                    <div class="department-box">
+
+                                        <div class="department-row">
+                                            <div class="department-col-1">
+                                                <img src="img/development-icon-1.svg" class="img-fluid"
+                                                    alt="development-icon">
+                                            </div>
+                                            <div class="department-col-2">
+                                                Video Game Development
+                                            </div>
+                                            <div class="department-col-3">
+                                                <i class='fa fa-arrow-right icon-slider'></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="{{ route('services-department') }}">
+                                    <div class="department-box">
+
+                                        <div class="department-row">
+                                            <div class="department-col-1">
+                                                <img src="img/development-icon-2.svg" class="img-fluid"
+                                                    alt="development-icon">
+                                            </div>
+                                            <div class="department-col-2">
+                                                Virtual Reality and Augmented Reality
+                                            </div>
+                                            <div class="department-col-3">
+                                                <i class='fa fa-arrow-right icon-slider'></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="{{ route('services-department') }}">
+                                    <div class="department-box">
+
+                                        <div class="department-row">
+                                            <div class="department-col-1">
+                                                <img src="img/development-icon-3.svg" class="img-fluid"
+                                                    alt="development-icon">
+                                            </div>
+                                            <div class="department-col-2">
+                                                Web Design & Development
+                                            </div>
+                                            <div class="department-col-3">
+                                                <i class='fa fa-arrow-right icon-slider'></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="{{ route('services-department') }}">
+                                    <div class="department-box">
+
+                                        <div class="department-row">
+                                            <div class="department-col-1">
+                                                <img src="img/development-icon-4.svg" class="img-fluid"
+                                                    alt="development-icon">
+                                            </div>
+                                            <div class="department-col-2">
+                                                Chatbot & Artificial Intelligence Development
+                                            </div>
+                                            <div class="department-col-3">
+                                                <i class='fa fa-arrow-right icon-slider'></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="{{ route('services-department') }}">
+                                    <div class="department-box">
+
+                                        <div class="department-row">
+                                            <div class="department-col-1">
+                                                <img src="img/development-icon-1.svg" class="img-fluid"
+                                                    alt="development-icon">
+                                            </div>
+                                            <div class="department-col-2">
+                                                Digital Marketing
+                                                & Social Media
+                                            </div>
+                                            <div class="department-col-3">
+                                                <i class='fa fa-arrow-right icon-slider'></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div id="projects-slider4" class="owl-theme owl-carousel">
+                                <a href="{{ route('services-department') }}">
+                                    <div class="department-box">
+
+                                        <div class="department-row">
+                                            <div class="department-col-1">
+                                                <img src="img/development-icon-5.svg" class="img-fluid"
+                                                    alt="development-icon">
+                                            </div>
+                                            <div class="department-col-2">2D & 3D Graphics</div>
+                                            <div class="department-col-3">
+                                                <i class='fa fa-arrow-right icon-slider'></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="{{ route('services-department') }}">
+                                    <div class="department-box">
+
+                                        <div class="department-row">
+                                            <div class="department-col-1">
+                                                <img src="img/development-icon-6.svg" class="img-fluid"
+                                                    alt="development-icon">
+                                            </div>
+                                            <div class="department-col-2">
+                                                2D & 3D
+                                                Animations for
+                                                Entertainment
+                                            </div>
+                                            <div class="department-col-3">
+                                                <i class='fa fa-arrow-right icon-slider'></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="{{ route('services-department') }}">
+                                    <div class="department-box">
+
+                                        <div class="department-row">
+                                            <div class="department-col-1">
+                                                <img src="img/development-icon-7.svg" class="img-fluid"
+                                                    alt="development-icon">
+                                            </div>
+                                            <div class="department-col-2">
+                                                Video Game
+                                                Assets
+                                            </div>
+                                            <div class="department-col-3">
+                                                <i class='fa fa-arrow-right icon-slider'></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="{{ route('services-department') }}">
+                                    <div class="department-box">
+
+                                        <div class="department-row">
+                                            <div class="department-col-1">
+                                                <img src="img/development-icon-8.svg" class="img-fluid"
+                                                    alt="development-icon">
+                                            </div>
+                                            <div class="department-col-2">
+                                                Graphic Design
+                                            </div>
+                                            <div class="department-col-3">
+                                                <i class='fa fa-arrow-right icon-slider'></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- business -->
+    <section id="business" class="business pt-0">
+        <div class="backgroun-element-1">
+            <img src="img/Vector2.svg" class="img-fluid" alt="element" title="element">
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-6 element-1 ">
+                    <div class="bg-business">
+                        <img src="img/business-img.webp" class="img-fluid" alt="element" title="element">
+
+                    </div>
+
+                </div>
+                <div class="col-12 col-lg-6">
+                    <h1 class="pt-5">Let us help you take your
+                        business to the next level</h1>
+                    <p>We understand that customers are looking for reliable, secure, and innovative
+                        solutions to unlock their imagination and unleash their creativity. That's why we offer
+                        top-of-the-line software and gaming products that are designed to meet the
+                        needs of all kinds of customers.</p>
+                    <a href="#" class="btn btn-brand">LEARN MORE <i class='fa fa-arrow-right icon-slider'></i> </a>
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="business" class="business">
+
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <div class="col-12 col-lg-6 order-lg-2 order-2">
+                    <h1 class="business-text">We'll help you find
+                        the right solution!</h1>
+                    <h4>Software Development Department</h4>
+                    <p>
+                        We are proud to offer our customers the highest quality software solutions available.
+                        Our team of experienced professionals are dedicated to providing the most innovative
+                        and reliable software solutions that are tailored to your specific needs. </p>
+
+                    <p>We offer a wide range of services, from custom software development to software
+                        integration and maintenance. Our team of experts can help you create the perfect
+                        software solution for your business, no matter what the challenge may be. </p>
+                    <div class="btn-area">
+                        <a href="#" class="btn btn-develop">
+                            <div class="btn-develop-row">
+                                <div class="btn-develop-col-1"><img src="img/icon-1.svg" class="img-fluid"
+                                        alt="element" title="element"> </div>
+                                <div class="btn-develop-col-2"> Software Development Department </div>
+                            </div>
+                        </a>
+                        <a href="#" class="btn btn-develop">
+                            <div class="btn-develop-row">
+                                <div class="btn-develop-col-1"><img src="img/icon-2.svg" class="img-fluid"
+                                        alt="element" title="element"> </div>
+                                <div class="btn-develop-col-2"> Entertainment Department </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 order-lg-2 order-1 ">
+                    <img src="img/business-img2.webp" class="img-fluid" alt="element" title="element">
+                </div>
+            </div>
+
+        </div>
+        <div class="backgroun-element-2">
+            <img src="img/Vector1.svg" class="img-fluid" alt="element" title="element">
+        </div>
+
+        <div class="backgroun-element-3">
+            <img src="img/Rectangle254.webp" class="img-fluid" alt="element" title="element">
+        </div>
+
+    </section>
+
+
+
+    <section id="work" class="work">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="intro">
+
+                        <h2>Recent Work</h2>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="projects-slider3" class="owl-theme owl-carousel">
+                <div class="project">
+                    <img src="img/recent-work-1.webp" class="img-fluid img-hight" alt="recent-work">
+                    <div class="content">
+                        <a href="#" class="btn btn-more">
+                            <p> <span class="btn-top-text">UI/UX design </span>Logilux App </p>
+
+                            <i class='fa fa-arrow-right icon-slider'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="img/recent-work-2.webp" class="img-fluid img-hight" alt="recent-work">
+                    <div class="content">
+                        <a href="#" class="btn btn-more">
+                            <p> <span class="btn-top-text">UI/UX design </span>Logilux App </p>
+
+                            <i class='fa fa-arrow-right icon-slider'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="img/recent-work-3.webp" class="img-fluid img-hight" alt="recent-work">
+                    <div class="content">
+                        <a href="#" class="btn btn-more">
+                            <p> <span class="btn-top-text">UI/UX design </span>Logilux App </p>
+
+                            <i class='fa fa-arrow-right icon-slider'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="img/recent-work-4.webp" class="img-fluid img-hight" alt="recent-work">
+                    <div class="content">
+                        <a href="#" class="btn btn-more">
+                            <p> <span class="btn-top-text">UI/UX design </span>Logilux App </p>
+
+                            <i class='fa fa-arrow-right icon-slider'></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="img/recent-work-1.webp" class="img-fluid img-hight" alt="recent-work">
+                    <div class="content">
+                        <a href="#" class="btn btn-more">
+                            <p> <span class="btn-top-text">UI/UX design </span>Logilux App </p>
+
+                            <i class='fa fa-arrow-right icon-slider'></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="img/recent-work-2.webp" class="img-fluid img-hight" alt="recent-work">
+                    <div class="content">
+                        <a href="#" class="btn btn-more">
+                            <p> <span class="btn-top-text">UI/UX design </span>Logilux App </p>
+
+                            <i class='fa fa-arrow-right icon-slider'></i>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact " class="contact ">
+        <div class="backgroun-element-4">
+            <img src="img/Rectangle254.webp" class="img-fluid" alt="element" title="element">
+        </div>
+        <div class="container">
+
+            <div class="contact contactbg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 text-white contact-text">
+
+                            <h1 class="display-3 my-4">Contact Us.</h1>
+                            <p>We would like to know more about the needs of your business.
+                                Please fill out the form below and let's grow together.
+                                We look forward to hearing from you.</p>
+
+
+                        </div>
+                        <div class="col-12 col-lg-6 element-1 ">
+                            <div class="form  formbg text-center">
+
+                                <form action="#">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="Firstname"
+                                            placeholder="First name" name="name">
+
+                                        <input type="text" class="form-control" id="LastName"
+                                            placeholder="Last Name" name="name">
+
+                                        <input type="email" class="form-control" id="email" placeholder="Email Id"
+                                            name="email">
+
+                                        <input type="text" class="form-control" id="contact" placeholder="Phone"
+                                            name="contact">
+
+
+
+                                        <textarea rows="4" class="form-control" id="discription" placeholder="Describe your Business Challenges..."
+                                            name="contact"> </textarea>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-brand">
+                                        <span> SEND </span>
+                                        <div class="icon-slider">
+                                            <img src="img/sent.svg" class="img-fluid icon-wid " alt="element"
+                                                title="element">
+                                        </div>
+                                    </button>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="backgroun-element-5">
+            <img src="img/Ellipse5.webp" class="img-fluid" alt="element" title="element">
+        </div>
+
+
+
+    </section>
+
+
+    <section id="work" class="our-work">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="intro">
+
+                        <h2>Our Clients</h2>
+
+                    </div>
+                </div>
+            </div>
+            <div class="logo-row">
+
+                <div class="logo-row-col"> <img src="img/Livello_2.svg" alt="client logo" class="img-fluid"></div>
+
+                <div class="logo-row-col"> <img src="img/Livello_1.svg" alt="client logo" class="img-fluid"></div>
+
+                <div class="logo-row-col"> <img src="img/Livello_2.svg" alt="client logo" class="img-fluid"></div>
+
+                <div class="logo-row-col"> <img src="img/Livello_1.svg" alt="client logo" class="img-fluid"></div>
+
+            </div>
+
+
+        </div>
+    </section>
+@endsection
