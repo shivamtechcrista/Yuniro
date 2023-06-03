@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\ServiceDepartmentController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,19 +17,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
 
-Route::get('/services', function () {
-    return view('services');
-});
-
-Route::get('/services-department',function(){
-    return view('services-department');
-})->name('services-department');
-
-
-Route::get('/contact',function(){
-    return view('contact');
-})->name('contact');
+Route::get('/',[HomeController::class,'index'])->name('dashboard');
+Route::get('/services',[ServiceController::class,'index'])->name('services');
+Route::get('/services-department',[ServiceDepartmentController::class,'index'])->name('services-department');
+Route::get('/contact',[ContactController::class,'index'])->name('contact');
