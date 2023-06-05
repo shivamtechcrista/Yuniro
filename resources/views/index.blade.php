@@ -1,12 +1,17 @@
 @extends('layouts.main')
 @section('main-container')
     <!-- SLIDER -->
+    {{-- @dd(auth()->user()->name) --}}
+    @if (session('success'))
+        <div class="alert alert-success">
+            {{ session('success') }}
+        </div>
+    @endif
     <div class="owl-carousel owl-theme hero-slider">
         <div class="slide slide1">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-10 text-white">
-
                         <h1 class="display-3 my-4">Unlock your <br>imagination.</h1>
                         <a href="#" class="btn btn-brand">LEARN MORE <i class='fa fa-arrow-right icon-slider'></i> </a>
 

@@ -79,8 +79,17 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Blog</a>
                     </li>
+                    <a href="{{ route('contact') }}" class="btn btn-brand ms-lg-3">Contact</a>
+                    @auth
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('logout') }}">Logout({{ auth()->user()?->name }})</a>
+                        </li>
+                        @else    
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('login') }}">Login</a>
+                        </li>
+                    @endauth    
                 </ul>
-                <a href="{{ route('contact') }}" class="btn btn-brand ms-lg-3">Contact</a>
             </div>
         </div>
     </nav>
