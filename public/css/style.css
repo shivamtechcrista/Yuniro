@@ -390,7 +390,7 @@ color: #000;
 
 
 .business{position: relative !important;}
-.business p{max-width: 541px;     margin-bottom: 40px;}
+.business p{max-width: 541px;     margin-bottom: 20px;}
 .element-1{ position: relative;}
 .backgroun-element-1{
 display: inline-block;
@@ -414,7 +414,7 @@ bottom: -14vw;
 }
 
 .backgroun-element-2 img{    width: 100%;}
-.business .bg-business{  background-color: #FCD64D; width: 80%;}
+.business .bg-business{  background-color: #FCD64D; width: 80%;     position: relative;}
 
 .bg-business:after {
 content: "";
@@ -1250,6 +1250,7 @@ section {
 .business .bg-business {
     background-color: #FCD64D;
     width: 90%;
+	    margin-bottom: 20px;
 }
 .backgroun-element-1 {
     top: 49vw;
@@ -1525,7 +1526,7 @@ font-size: 50px;
 .backgroun-element-6 {
     display: inline-block;
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     width: 20vw;
     top: 0;
     left: 0;
@@ -1681,8 +1682,8 @@ font-size: 20px;
 .backgroun-element-6 {
     display: inline-block;
     position: absolute;
-    z-index: 1;
-    width: 30vw;
+    z-index: 0;
+    width: 20vw;
     top: 0;
     left: 0;
 }
@@ -2189,5 +2190,74 @@ color: #0A2C3D;
 @media only screen and (max-width:767px){
 .contact-area .box {
     margin-bottom: 30px;
+}
+}
+
+
+
+/*************about*************/
+
+.meet-team{ position: relative !important; }
+.meet-team h1{    margin-bottom: 60px;}
+
+
+.backgroun-element-19 {
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    width: 20vw;
+    right: 0;
+   top: 90px;
+}
+
+.team-box {
+	    position: relative;
+    overflow: hidden;
+    z-index: 2;
+width: 100%;
+height: 138px;
+
+padding: 20px;
+background: #FFFFFF;
+box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1), inset 4px 0px 0px #FCD64D;
+border-radius: 10px;
+}
+
+.team-box:hover {background: #FCD64D;}
+team-row{display: flex;
+    align-items: center;
+    justify-content: space-between;     height: 100px;}
+.team-row{ display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;}	
+.team-col-1{width: 26%; padding-right:10px; }
+.team-col-2{
+width: 72%;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    color: #000000;
+
+}
+
+.team-col-2 span{font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+letter-spacing: -0.02em;
+color: #000000;    display: block;}
+
+.team-col-1 img{width: 94px; height:84px;}
+
+
+@media only screen and (max-width:1399px){
+	.team-col-2 {
+    font-size: 20px;
+
+}
+.team-col-2 span {
+    font-size: 18px;
+    line-height: 20px;
 }
 }

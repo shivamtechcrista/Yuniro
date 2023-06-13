@@ -64,21 +64,21 @@
                         <a class="nav-link {{ $route == 'dashboard' ? 'active': '' }} " href="{{ route('dashboard') }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link {{ $route == 'about' ? 'active': '' }} " href="{{ route('about') }}">About</a>
                     </li>
-					                    <li class="nav-item">
+					                    {{-- <li class="nav-item">
                         <a class="nav-link" href="#">Pages</a>
-                    </li>
+                    </li> --}}
                     <li class="nav-item">
                         <a class="nav-link {{ in_array($route , ['services','services-department']) ? 'active': '' }} " href="{{ route('services') }}">Services</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Work</a>
+                    <li class="nav-item ">
+                        <a class="nav-link {{ $route == 'work' ? 'active': '' }} " href="{{ route('work') }}">Work</a>
                     </li>
-                    <li class="nav-item">
+                    {{-- <li class="nav-item">
                         <a class="nav-link" href="#">Blog</a>
-                    </li>
+                    </li> --}}
                     <a href="{{ route('contact') }}" class="btn btn-brand ms-lg-3">Contact</a>
                     @auth
                         <li class="nav-item">
