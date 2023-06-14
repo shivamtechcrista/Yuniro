@@ -34,6 +34,6 @@ class ContactController extends Controller
 
         $contact->save();
     
-        return redirect()->route('dashboard')->with('success', 'Contact saved successfully!');
+        return redirect()->back()->with('success', 'Thank you for contacting us,<br>we will get back to you soon!');
     }
 }

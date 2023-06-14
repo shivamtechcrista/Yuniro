@@ -120,8 +120,12 @@
                                                 title="element">
                                         </div>
                                     </button>
+                                    @if (session('success'))
+                                        <div class="alert alert-success mt-4 my-4 ">
+                                            {!! nl2br(session('success')) !!}
+                                        </div>
+                                    @endif
                                 </form>
-
                             </div>
                         </div>
                     </div>

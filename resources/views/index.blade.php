@@ -1,12 +1,6 @@
 @extends('layouts.main')
 @section('main-container')
     <!-- SLIDER -->
-    {{-- @dd(auth()->user()->name) --}}
-    @if (session('success'))
-        <div class="alert alert-success">
-            {{ session('success') }}
-        </div>
-    @endif
     <div class="owl-carousel owl-theme hero-slider">
         <div class="slide slide1">
             <div class="container">
