@@ -25,12 +25,12 @@
                         <div class="footer_links_container">
                             <ul>
 
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About Us </a></li>
-                                <li><a href="#">Our Services </a></li>
-                                <li><a href="#">Projects</a></li>
-                                <li><a href="#">Latest Blog </a></li>
-                                <li><a href="#">Contact </a></li>
+                                <li><a href="{{ route('dashboard') }}">Home</a></li>
+                                <li><a href="{{ route('about') }}">About Us </a></li>
+                                <li><a href="{{  route('services') }}">Our Services </a></li>
+                                <li><a href="{{ route('work') }}">Projects</a></li>
+                                {{-- <li><a href="{{ route('dashboard') }}">Latest Blog </a></li> --}}
+                                <li><a href="{{ route('contact') }}">Contact </a></li>
                             </ul>
                         </div>
                     </div>
