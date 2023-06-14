@@ -50,8 +50,8 @@
                                 <li>Via Salvatore Talamo 20, </li>
                                 <li>00177, Roma, Italia </li>
                                 <li>P.IVA 16226421002</li>
-                                <li><a href="#"> 06.21802375</a></li>
-                                <li><a href="#"> info@yuniro.it</a></li>
+                                <li><a href="tel:0621802375"> 06.21802375</a></li>
+                                <li><a href="mailto:info@yuniro.it"> info@yuniro.it</a></li>
                             </ul>
                         </div>
                     </div>

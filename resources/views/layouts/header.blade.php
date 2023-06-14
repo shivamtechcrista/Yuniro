@@ -32,15 +32,16 @@
                     <p class="font-600"> Welcome to Yuniro</p>
                    
                 </div>
-                <div class="col-lg-9 col-md-9 social-icons social-icon">
-				  <p  class="font-400 top-nav-gap"> <i class='fa fa-phone'></i> 06.21802375</p>| 
-				 <p  class="font-400 top-nav-gap"> <i class='fa fa-envelope'></i> info@yuniro.it</p>|
+                {{-- <a href="mailto:email_id"></a> --}}
+                <div class="col-lg-9 col-md-9  social-icon">
+				    <p  class="font-400 top-nav-gap"> <a href="tel:0621802375"> <i class='fa fa-phone'></i> 06.21802375 </a> </p>| 
+				    <p  class="font-400 top-nav-gap"> <a href="mailto:info@yuniro.it"> <i class='fa fa-envelope'></i> info@yuniro.it </a></p>|
                   
-				<span class="font-600 top-nav-gap mobile-hidden">FOLLOW US</span>
-                    <a href="#"><i class='fa fa-facebook'></i></a>
-                    <a href="#"><i class='fa fa-twitter'></i></a>
-                    <a href="#"><i class='fa fa-instagram'></i></a>
-                    <a href="#"><i class='fa fa-pinterest'></i></a>
+				<span class="font-600 top-nav-gap mobile-hidden social-icons">FOLLOW US</span>
+                    <a href="#"><i class='fa fa-facebook mx-2'></i></a>
+                    <a href="#"><i class='fa fa-twitter mx-2'></i></a>
+                    <a href="#"><i class='fa fa-instagram mx-2'></i></a>
+                    <a href="#"><i class='fa fa-pinterest mx-2'></i></a>
                 </div> 
 				
             </div>
@@ -85,9 +86,9 @@
                             <a class="nav-link" href="{{ route('logout') }}">Logout({{ auth()->user()?->name }})</a>
                         </li>
                         @else    
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a class="nav-link" href="{{ route('login') }}">Login</a>
-                        </li>
+                        </li> --}}
                     @endauth    
                 </ul>
             </div>
