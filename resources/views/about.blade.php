@@ -244,7 +244,7 @@
             </div>
 
             <div class="col-12 col-lg-6 order-lg-2 order-1 ">
-                <img src="img/business-img2.webp" class="img-fluid " loading="lazy" alt="element"
+                <img src="img/business-img2.webp" class="img-fluid business-img-height" loading="lazy" alt="element"
                     title="element">
             </div>
         </div>
