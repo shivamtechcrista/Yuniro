@@ -1,32 +1,24 @@
 @extends('layouts.main')
 @section('main-container')
     <!-- SLIDER -->
-    <div class="owl-carousel owl-theme hero-slider">
-        <div class="slide slide1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-10 text-white">
-                        <h1 class="display-3 my-4">Unlock your <br>imagination.</h1>
-                        <a href="#" class="btn btn-brand">LEARN MORE <i class='fa fa-arrow-right icon-slider'></i> </a>
-
+    <div class="position-relative">
+        <div class="owl-carousel owl-theme hero-slider">
+            <div class="slide slide1"> </div>
+            <div class="slide slide2"></div>
+        </div>
+        <div class="upper_text">
+        <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-10 text-white">
+                            <h1 class="display-3 my-4 text-white">Unlock your <br>imagination.</h1>
+                            <a href="#" class="btn btn-brand"><span>LEARN MORE </span><i class='fa fa-arrow-right icon-slider'></i> </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="slide slide2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-10  text-white">
-
-                        <h1 class="display-3 my-4">Unlock your <br>imagination.</h1>
-                        <a href="#" class="btn btn-brand">LEARN MORE <i class='fa fa-arrow-right icon-slider'></i>
-                        </a>
-
-                    </div>
                 </div>
-            </div>
         </div>
-    </div>
+    </div>    
+	 <!-- SLIDER -->
 
     <!-- Department -->
     <section id="department" class="department pt-0">

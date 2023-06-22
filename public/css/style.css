@@ -132,9 +132,7 @@
       background-color: #ff4d29 !important; 
   }
   
-  .owl-dot.active span{
-      background-color: #F0B800 !important;
-  }
+  
   
   .hero-slider.owl-theme .owl-nav {
       margin-top: 10px;
@@ -332,17 +330,28 @@
       font-size: 18px;
       line-height: 30px;
           font-weight: 500;
+              display: flex;
+      align-items: center;
+      justify-content: center;
   
   }
   
   .btn-brand {
       border-color: #FCD64D;
-  color: #000;
+      color: #000;
       font-size: 12px;
+      width: 209px;
+      height: 58px;
       font-weight: 700;
       background: #FCD64D;
       border-radius: 10px;
-     
+      display: flex;
+      align-items: center;
+      padding: 5px;
+  }
+  .btn-brand span {
+      width: calc(100% - 48px);
+      display: block;
   }
   
   .btn-brand:hover {
@@ -630,7 +639,7 @@
       align-items: center;
       justify-content: space-between;
       line-height: 14px;
-      padding: 8px 7px 8px 25px;
+          padding: 5px;
      
   }
   .btn-more p {
@@ -638,6 +647,13 @@
       text-align: left;
       
       
+  }
+  
+  
+  .btn-more p {
+      /*width: calc(100% - 39px);*/
+      display: block;
+      margin-left: 20px;
   }
   
   .btn-top-text{display: block;
@@ -731,7 +747,7 @@
       letter-spacing: 0.2em;
       color: #070708;
       border-radius: 10px;
-          padding-right: 0;
+          padding-right: 5px;
           margin-top:32px;
               display: flex;
       align-items: center;
@@ -740,7 +756,7 @@
   }
   
   .contact .icon-slider{
-      margin-left: 42px;
+      margin-left: 0;
       }
       
       
@@ -1012,6 +1028,7 @@
       padding: 3px;
       border: 1px solid #000;
       border-radius: 5px;
+      height: 46px;
   }
   .subscribe-form .form-control {
       background-color: transparent;
@@ -1897,9 +1914,7 @@
       font-size: 14px;
   }
   .icon-service {
-      width: 24px;
-      height: 24px;
-      line-height: 24px;
+  
       background: #000000;
       border-radius: 10px;
       color: #fff;
@@ -2306,7 +2321,7 @@
   
   
   
-  .fa-arrow-right:before {
+  .project .icon-slider:before {
       content: "";
       width: 24px;
       height: 24px;
@@ -2318,6 +2333,60 @@
   
   }
   
+  .project .icon-slider {
+      width: 39px;
+      height: 39px;
+      line-height:39px;
+      background: #000000;
+      border-radius: 10px;
+      color: #fff;
+      margin-left: 17px;
+      font-size: 14px;
+  }
+  
+  .icon-slider:before {
+      content: "";
+      width: 24px;
+      height: 24px;
+      background-image: url(../img/fi-rr-arrow-small-right.svg);
+      display: inline-block;
+      padding: 10px;
+      position: relative;
+      top: 5px;
+  }
+  
+  .upper_text .btn-brand .icon-slider:before {
+      top: 8px;
+  }
+  
+  .business .btn-brand .icon-slider:before {
+      top: 8px;
+  }
+  
+  .contact  .icon-slider:before {
+      content: "";
+      width: 24px;
+      height: 24px;
+      position: relative;
+      background-image: none;
+      display: contents;
+      padding: 0;
+      top: 0;
+  }
+  
+  
+  .fa-arrow-right:before {
+       content: "";
+      width: 24px;
+      height: 24px;
+         background-image: url(../img/fi-rr-arrow-small-right.svg);
+      display: inline-block;
+      padding: 10px;
+      position: relative;
+      top: 5px;
+  }
+  
+  /*
   .owl-carousel button.owl-dot {
      border: 1px solid #FCD64D;
   
@@ -2353,4 +2422,37 @@
               width: 20px;
       height: 20px;
   }
+  */
   
+  .upper_text {
+      position: absolute;
+      top: 130px;
+      left: 60px;
+      right: 60px;
+      z-index: 9;
+  
+  }
+  
+  .owl-carousel button.owl-dot.active {
+      background-color: transparent;
+      border: 1px solid #FCD64D;
+      width: fit-content;
+      border-radius: 50%;
+     
+      height: fit-content;
+  }
+  
+  
+  .owl-dot span {
+      width: 10px;
+      border: 1px solid #F0B800;
+      border-radius: 50%;
+      margin: 6px;
+      background-color: transparent;
+      height: 10px;
+      display: block;
+  }
+  
+  .hero-slider .owl-dots {
+      right: 10px;
+  }
