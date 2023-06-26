@@ -297,8 +297,7 @@
                         solutions to unlock their imagination and unleash their creativity. That's why we offer
                         top-of-the-line software and gaming products that are designed to meet the
                         needs of all kinds of customers.</p>
-                    <a href="#" class="btn btn-brand">LEARN MORE <i class='fa fa-arrow-right icon-slider'></i> </a>
-
+                        <a href="#" class="btn btn-brand"><span>LEARN MORE </span><i class='fa fa-arrow-right icon-slider'></i> </a>
 
                 </div>
 
