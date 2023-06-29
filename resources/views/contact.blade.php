@@ -109,8 +109,8 @@
                                         <input type="text" class="form-control" id="contact" placeholder="Phone" required
                                             name="mobile">
 
-                                        <textarea rows="4" class="form-control" id="description" placeholder="Describe your Business Challenges..."
-                                            name="description"> </textarea>
+                                            <textarea type="text" class="form-control" id="discription" placeholder="Describe your Business Challenges" name="discription" rows="4"></textarea>
+
                                     </div>
 
                                     <button type="submit" class="btn btn-brand">
