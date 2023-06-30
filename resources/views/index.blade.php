@@ -463,24 +463,23 @@
                         <div class="col-12 col-lg-6 element-1 ">
                             <div class="form  formbg text-center">
 
-                                <form action="#">
+                                <form action="{{ route('contactSave') }}" method="POST">
+                                    @csrf
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="Firstname"
-                                            placeholder="First name" name="name">
+                                        <input type="text" class="form-control" id="Firstname" placeholder="First name" required
+                                            name="first_name">
 
-                                        <input type="text" class="form-control" id="LastName"
-                                            placeholder="Last Name" name="name">
+                                        <input type="text" class="form-control" id="LastName" placeholder="Last Name" required
+                                            name="last_name">
 
-                                        <input type="email" class="form-control" id="email" placeholder="Email Id"
+                                        <input type="email" class="form-control" id="email" placeholder="Email Id" required
                                             name="email">
 
-                                        <input type="text" class="form-control" id="contact" placeholder="Phone"
-                                            name="contact">
+                                        <input type="text" class="form-control" id="contact" placeholder="Phone" required
+                                            name="mobile">
 
+                                            <textarea type="text" class="form-control" id="discription" placeholder="Describe your Business Challenges" name="discription" rows="4"></textarea>
 
-
-                                        <textarea rows="4" class="form-control" id="discription" placeholder="Describe your Business Challenges..."
-                                            name="contact"> </textarea>
                                     </div>
 
                                     <button type="submit" class="btn btn-brand">
@@ -490,7 +489,12 @@
                                                 title="element">
                                         </div>
                                     </button>
-                                </form>
+                                    @if (session('success'))
+                                        <div class="alert alert-success mt-4 my-4 ">
+                                            {!! nl2br(session('success')) !!}
+                                        </div>
+                                    @endif
+                                </form> 
 
                             </div>
                         </div>
